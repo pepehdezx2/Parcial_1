@@ -27,7 +27,22 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
 */
 
 // CREA TU FUNCION challenge1 aqui:
+function challenge1(){
+    var times = prompt("cuantos botones necesitas");
+    var n=Number(times);
+    for(i=0 ; i<n; i++){
+    var targetDiv = document.getElementById("empty-div");
 
+      // In this example, we instead create a new div called "newDiv".
+      var newDiv = document.createElement("button");
+
+      // We then give this newDiv the text "A pleasure to meet you!".
+      newDiv.textContent = nombres[i];
+
+      // Now we use the ".appendChild" method to combine the two divs together on the page.
+      targetDiv.appendChild(newDiv);    
+    }
+}
 
 
 /*
@@ -35,8 +50,12 @@ Crea una funcion llamada: challenge2 que utilizando un FOR convierta todos los n
 */
 
 // CREA TU FUNCION challenge2 2 aquí.
-
-
+function challenge2(){
+    ffor(i=0; i<9; i++){
+        var mean=nombres[i].toUpperCase();
+        console.log(mean);
+    }
+    }
 
 /*
 
@@ -50,6 +69,17 @@ A) Define un objeto tipo "Dog" que reciba 3 parametros
 B) Crea 3 objectos siguiendo esa clase con diferentes valores
 
 eJ   var fido = new Dog("Fido","Cafe","Poodle")
+
+//objetos dog
+function Dog(name, color, race){
+    this.nombre=name;
+    this.color=color;
+    this.race=race;
+}
+
+var mydog1= new Dog('Fido', 'Cafe', 'Poodle');
+var mydog2= new Dog('Mickey', 'Cafe', 'Chihuahua');
+var mydog3= new Dog('Snoopy', 'Blanco', 'Beagle');
 
 
 *****BONUS**** 10  puntos
